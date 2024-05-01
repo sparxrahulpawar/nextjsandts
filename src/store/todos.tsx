@@ -21,7 +21,7 @@ export const TodosProvider = ({ children }: { children: ReactNode }) => {
     setTodos((prev) => {
       const newTodos: Todo[] = [
         {
-          id: Math.random().toString(),
+          id: Math.random().toString(), //random id
           task,
           completed: false,
           createdAt: new Date(),
